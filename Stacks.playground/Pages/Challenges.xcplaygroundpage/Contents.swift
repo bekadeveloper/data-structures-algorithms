@@ -3,8 +3,15 @@ import Foundation
 let array: [Int] = [1, 2, 3, 4, 5]
 
 func printInReverse<T>(_ array: [T]) {
-    let stack = Stack(array)
-    print(stack)
+    var stack = Stack<T>()
+    
+    for element in array {
+        stack.push(element)
+    }
+    
+    while let value = stack.pop() {
+        print(value)
+    }
 }
 
 printInReverse(array)
