@@ -34,35 +34,3 @@ func checkParentheses(_ string: String) -> Bool {
 }
 
 print(checkParentheses(testString1))
-
-
-
-let test = "{(([])[])[]]}"
-
-func isBalanced(_ string: String) -> String {
-    var stack = Stack<Character>()
-    
-    for char in string {
-        switch char {
-            case "{","[","(":
-                stack.push(char)
-            case "}":
-                if !stack.isEmpty && stack.peek()! == "{" {
-                    stack.pop()
-                } else { return "NO" }
-            case "]":
-                if !stack.isEmpty && stack.peek()! == "[" {
-                    stack.pop()
-                } else { return "NO" }
-            case ")":
-                if !stack.isEmpty && stack.peek()! == "(" {
-                    stack.pop()
-                } else { return "NO" }
-            default:
-                return "NO"
-        }
-    }
-    return stack.isEmpty ? "YES" : "NO"
-}
-
-print(isBalanced(test))
