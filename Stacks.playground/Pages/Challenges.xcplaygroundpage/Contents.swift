@@ -34,3 +34,4 @@ func checkParentheses(_ string: String) -> Bool {
 }
 
 print(checkParentheses(testString1))
+
