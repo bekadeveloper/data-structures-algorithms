@@ -1,6 +1,6 @@
 import Foundation
 
-// Reversing an array
+// Reversing an array (Easy)
 func reverseArray<T>(_ a: [T]) -> [T] {
     var reversed: [T] = []
     
@@ -13,7 +13,7 @@ func reverseArray<T>(_ a: [T]) -> [T] {
 
 reverseArray([1, 2, 3, 4]) // returns [4, 3, 2, 1]
 
-// Sparse arrays
+// Sparse arrays (Medium)
 func matchingStrings(strings: [String], queries: [String]) -> [Int] {
     var result: [Int] = []
     
