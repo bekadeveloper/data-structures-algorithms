@@ -93,3 +93,21 @@ matrix = [
     [10, 8, -12]
 ]
 diagonalDifference(arr: matrix) // returns 15
+
+// Mini-Max Sum (Easy)
+func miniMaxSum(arr: [Int]) -> Void {
+    guard !arr.isEmpty else { return }
+
+    var minSum: Int = 0
+    var maxSum: Int = 0
+    
+    for number in arr.sorted()[0..<arr.sorted().endIndex-1] {
+        minSum += number
+    }
+    for number in arr.sorted()[1..<arr.sorted().endIndex] {
+        maxSum += number
+    }
+    print("\(minSum) \(maxSum)")
+}
+
+miniMaxSum(arr: [1, 2, 3, 4, 5]) // prints "10 14"
