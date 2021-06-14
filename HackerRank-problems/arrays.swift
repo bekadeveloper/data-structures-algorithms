@@ -111,3 +111,20 @@ func miniMaxSum(arr: [Int]) -> Void {
 }
 
 miniMaxSum(arr: [1, 2, 3, 4, 5]) // prints "10 14"
+
+// Birthday Cake Candles (Easy)
+extension Array where Element: Comparable {
+    func count(_ item: Element) -> Int {
+        var count = 0
+        for element in self {
+            if element == item {
+                count += 1
+            }
+        }
+        return count
+    }
+}
+
+func birthdayCakeCandles(candles: [Int]) -> Int {
+    return candles.count(candles.max()!)
+}
