@@ -12,13 +12,22 @@ import Foundation
 //    print(node1)
 //}
 
-example(of: "adding values to the list") {
-    
+example(of: "pushing") {
     var linkedList = LinkedList<Character>()
     
     linkedList.push("C")
     linkedList.push("B")
     linkedList.push("A")
+    
+    print(linkedList)
+}
+
+example(of: "appending") {
+    var linkedList = LinkedList<Int>()
+    
+    linkedList.append(1)
+    linkedList.append(2)
+    linkedList.append(3)
     
     print(linkedList)
 }
