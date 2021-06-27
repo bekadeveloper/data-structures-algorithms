@@ -12,22 +12,38 @@ import Foundation
 //    print(node1)
 //}
 
-example(of: "pushing") {
-    var linkedList = LinkedList<Character>()
-    
-    linkedList.push("C")
-    linkedList.push("B")
-    linkedList.push("A")
-    
+//example(of: "pushing") {
+//    var linkedList = LinkedList<Character>()
+//
+//    linkedList.push("C")
+//    linkedList.push("B")
+//    linkedList.push("A")
+//
+//    print(linkedList)
+//}
+
+example(of: "appending") {
+    var linkedList = LinkedList<Float>()
+
+    linkedList.append(1.0)
+    linkedList.append(2.0)
+    linkedList.append(3.0)
+
     print(linkedList)
 }
 
-example(of: "appending") {
-    var linkedList = LinkedList<Int>()
+example(of: "inserting at a particular index") {
+    var list = LinkedList<Character>()
     
-    linkedList.append(1)
-    linkedList.append(2)
-    linkedList.append(3)
+    list.append("A")
+    list.append("E")
+    list.append("D")
+
+    print("Before inserting: \(list)")
     
-    print(linkedList)
+    for i in 0...2 {
+        list.insert("C", after: list.node(at: i))
+    }
+    
+    print("After inserting: \(list)")
 }
