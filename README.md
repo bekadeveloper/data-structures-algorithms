@@ -3,14 +3,14 @@ with HackerRank and LeetCode samples
 
 
 
-### [Stack](Stack.playground/Sources/Stack.swift) (aka LIFO)
+### [Stack](Stack/Stack/Stack.swift) (aka LIFO)
 |                     | `push`         | `pop`           | `peek`
 | ------------------- | :-----------:  | :-----------:   | :-----------:
 | **Behaviour**       | add to the end | remove the last | look at the last
 | **Time Complexity** | O(1)           | O(1)            | O(1)
 
 
-### [LinkedList](LinkedList.playground/Sources/LinkedList.swift)
+### [LinkedList](LinkedList/LinkedList/LinkedList.swift)
 |                     | `push`         | `append`        | `insert(after:)`    | `node(at:)`
 | ------------------- | :-----------:  | :-----------:   | :-----------:       | :-----------:
 | **Behaviour**       | insert at head | insert at tail  | insert after a node | returns a node at given index
