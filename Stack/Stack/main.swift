@@ -1,5 +1,11 @@
-import Foundation
+//
+//  main.swift
+//  Stack
+//
+//  Created by Begzod on 28/06/21.
+//
 
+import Foundation
 
 example(of: "using a stack") {
     var stack = Stack<Int>()
@@ -8,23 +14,22 @@ example(of: "using a stack") {
     stack.push(2)
     stack.push(3)
     stack.push(4)
+
+    guard let poppedElement = stack.pop() else { return }
     
     print(stack)
-    
-    guard let poppedElement = stack.pop() else { return }
-    assert(4 == poppedElement)
-    print("Popped: \(poppedElement)")
+    print("Popped element: \(poppedElement)")
 }
-
 
 example(of: "initializing a stack from an array") {
     let array = ["A", "B", "C", "D"]
-    var stack = Stack(array)
+    let stack = Stack(array)
+    
     print(stack)
 }
 
-
 example(of: "initializing a stack from an array literal") {
-    var stack: Stack = [1.0, 2.0, 3.0, 4.0]
+    let stack: Stack = [1.0, 2.0, 3.0, 4.0]
+    
     print(stack)
 }

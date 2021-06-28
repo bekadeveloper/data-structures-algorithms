@@ -1,44 +1,51 @@
+//
+//  Stack.swift
+//  Stack
+//
+//  Created by Begzod on 28/06/21.
+//
+
 import Foundation
 
-public struct Stack<Element> {
+struct Stack<Element> {
     private var storage: [Element] = []
     
-    public init() { }
+    init() {}
     
-    public init(_ elements: [Element]) {
+    init(_ elements: [Element]) {
         storage = elements
     }
     
-    public mutating func push(_ element: Element) {
+    mutating func push(_ element: Element) {
         storage.append(element)
     }
     
     @discardableResult
-    public mutating func pop() -> Element? {
+    mutating func pop() -> Element? {
         storage.popLast()
     }
     
-    public func peek() -> Element? {
+    func peek() -> Element? {
         return storage.last
     }
     
-    public var isEmpty: Bool {
+    var isEmpty: Bool {
         return peek() == nil
     }
 }
 
 extension Stack: CustomStringConvertible {
-    public var description: String {
+    var description: String {
         """
         ----top----
-        \(storage.map { "\($0)" }.reversed().joined(separator: "\n"))
+        \(storage.reversed().map { "\($0)" }.joined(separator: "\n"))
         -----------
         """
     }
 }
 
 extension Stack: ExpressibleByArrayLiteral {
-    public init(arrayLiteral elements: Element...) {
+    init(arrayLiteral elements: Element...) {
         storage = elements
     }
 }
