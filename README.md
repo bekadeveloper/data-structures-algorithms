@@ -1,5 +1,5 @@
 # Data Structures &amp; Algorithms in Swift
-with HackerRank and LeetCode samples
+with HackerRank and LeetCode problems
 
 
 
