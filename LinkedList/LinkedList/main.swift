@@ -49,3 +49,43 @@ example(of: "inserting at a particular index") {
     list.insert(12.4, after: list.node(at: 0))
     print("After inserting: \(list)")
 }
+
+example(of: "pop operation") {
+    var list = LinkedList<Character>()
+    
+    list.append("A")
+    list.append("B")
+    list.append("C")
+    print("Before popping list: \(list)")
+    
+    let poppedValue = list.pop()
+    print("After popping list: \(list)")
+    print("Popped value: " + String(describing: poppedValue))
+}
+
+example(of: "removing the last node") {
+    var list = LinkedList<Int>()
+    
+    list.push(9)
+    list.push(45)
+    list.push(12)
+    print("Before removing last node: \(list)")
+    
+    let removedValue = list.removeLast()
+    print("After removing last node: \(list)")
+    print("Removed value: " + String(describing: removedValue))
+}
+
+example(of: "removing a node after a particular node") {
+    var list = LinkedList<String>()
+    
+    list.append("Tim")
+    list.append("Craig")
+    list.append("Phill")
+    list.append("Johny")
+    print("Before remove(after:) operation: \(list)")
+    
+    let removedValue = list.remove(after: list.node(at: 1))
+    print("After remove(after:) operation: \(list)")
+    print("Removed value: " + String(describing: removedValue))
+}

@@ -20,7 +20,6 @@ class Node<Value> {
 
 
 extension Node: CustomStringConvertible {
-    
     var description: String {
         guard let next = next else {
             return "\(value)"
