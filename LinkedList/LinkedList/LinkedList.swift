@@ -108,6 +108,49 @@ struct LinkedList<Value> {
     }
 }
 
+extension LinkedList: Collection {
+    
+    struct Index: Comparable {
+        var node: Node<Value>?
+
+        static func ==(lhs: Index, rhs: Index) -> Bool {
+            switch (lhs.node, rhs.node) {
+                case let (left?, right?):
+                    return left.next === right.next
+                case (nil, nil):
+                    return true
+                default:
+                    return false
+            }
+        }
+        
+        static func <(lhs: Index, rhs: Index) -> Bool {
+            guard lhs != rhs else {
+                return false
+            }
+            
+            let nodes = sequence(first: lhs.node) { $0?.next }
+            return nodes.contains { $0 === rhs.node }
+        }
+    }
+    
+    var startIndex: Index {
+        return Index(node: head)
+    }
+    
+    var endIndex: Index {
+        return Index(node: tail?.next)
+    }
+    
+    func index(after i: Index) -> Index {
+        return Index(node: i.node?.next)
+    }
+    
+    subscript(position: Index) -> Value {
+        return position.node!.value
+    }
+}
+
 extension LinkedList: CustomStringConvertible {
     
     var description: String {
