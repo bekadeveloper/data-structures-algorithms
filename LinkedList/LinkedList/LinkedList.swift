@@ -19,7 +19,7 @@ struct LinkedList<Value> {
     }
     
     mutating func push(_ value: Value) {
-        copyNodes()
+//        copyNodes()
         
         head = Node(value, next: head)
         
@@ -106,19 +106,21 @@ struct LinkedList<Value> {
     
     @discardableResult
     mutating func remove(after node: Node<Value>?) -> Value? {
-        copyNodes()
+        guard let node = copyNodes(returningCopyOf: node) else { return nil }
         
         defer {
-            if node?.next === tail {
+            if node.next === tail {
                 tail = node
             }
             
-            node?.next = node?.next?.next
+            node.next = node.next?.next
         }
-        return node?.next?.value
+        return node.next?.value
     }
     
-    mutating func copyNodes() {
+    private mutating func copyNodes() {
+        guard !isKnownUniquelyReferenced(&head) else { return }
+        
         guard var oldNode = head else {
             return
         }
@@ -134,6 +136,30 @@ struct LinkedList<Value> {
         }
         
         tail = newNode
+    }
+    
+    private mutating func copyNodes(returningCopyOf node: Node<Value>?) -> Node<Value>? {
+        guard !isKnownUniquelyReferenced(&head) else { return nil }
+        
+        guard var oldNode = head else {
+            return nil
+        }
+        
+        head = Node(oldNode.value)
+        var newNode = head
+        var nodeCopy: Node<Value>?
+        
+        while let nextOldNode = oldNode.next {
+            if oldNode === node {
+                nodeCopy = newNode
+            }
+            
+            newNode!.next = Node(nextOldNode.value)
+            newNode = newNode!.next
+            oldNode = nextOldNode
+        }
+        
+        return nodeCopy
     }
 }
 

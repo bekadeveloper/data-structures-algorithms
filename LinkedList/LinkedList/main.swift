@@ -136,4 +136,22 @@ example(of: "linked list COW") {
     print("After appending 3 to list2")
     print("list1: \(list1)")
     print("list2: \(list2)")
+    
+    if let node = list2.node(at: 0) {
+        list2.remove(after: node)
+    }
+    print(list2)
+}
+
+example(of: "partial sharing of nodes") {
+    var list1 = LinkedList<Int>()
+    (1...3).forEach { list1.append($0) }
+    
+    var list2 = list1
+    
+    list1.push(100)
+    list2.push(0)
+    
+    print("\(list1)\n\(list2)")
+
 }
