@@ -1,5 +1,6 @@
 import Foundation
 
+// 1 (brute-force)
 func printInReverse<T>(_ list: LinkedList<T>) {
     var stack = [T]()
     
@@ -21,5 +22,20 @@ list.append(2)
 list.append(3)
 
 print(list)
-
 printInReverse(list)
+
+
+// 2 (recursion)
+func printInReverse<T>(_ node: Node<T>?) {
+    guard let node = node else { return }
+    printInReverse(node.next)
+    print(node.value)
+}
+
+var list = LinkedList<Int>()
+list.push(3)
+list.push(2)
+list.push(1)
+
+print(list)
+printInReverse(list.head)
