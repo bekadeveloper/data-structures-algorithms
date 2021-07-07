@@ -2,6 +2,7 @@ import Foundation
 
 extension LinkedList {
     
+  // 1
   mutating func reverse() {
     guard head != nil, head!.next != nil else { return }
     
@@ -24,15 +25,36 @@ extension LinkedList {
     
     tail = current2
   }
+
+
+  // 2 (easy way to reverse)
+  mutating func easyReverse() {
+    var tempList = LinkedList<Value>()
+
+    for value in self {
+      tempList.push(value)
+    }
+
+    head = tempList.head
+    tail = tempList.tail
+  }
 }
 
-var list = LinkedList<String>()
-list.append("Hello")
-list.append("Linked")
-list.append("List!")
 
-print("Before reversing: \(list)")
+var list1 = LinkedList<String>()
+list1.append("Hello")
+list1.append("Linked")
+list1.append("List!")
 
-list.reverse()
+print("Before reversing: \(list1)")
+list1.reverse()
+print("After reversing: \(list1)")
 
-print("After reversing: \(list)")
+
+
+var list2 = LinkedList<Int>()
+(1...4).forEach { list.append($0) }
+
+print("Before reversing: \(list2)")
+list2.easyReverse()
+print("After reversing: \(list2)")
