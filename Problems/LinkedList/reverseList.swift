@@ -42,20 +42,20 @@ extension LinkedList {
 
   // 3 (more optimal algorithm for reversing a list)
   mutating func optimalReverse() {
-        tail = head
-        var prev = head
-        var current = head?.next
-        prev?.next = nil
-        
-        while current != nil {
-            let next = current?.next
-            current?.next = prev
-            prev = current
-            current = next
-        }
-        
-        head = prev
+    tail = head
+    var prev = head
+    var current = head?.next
+    prev?.next = nil
+    
+    while current != nil {
+        let next = current?.next
+        current?.next = prev
+        prev = current
+        current = next
     }
+    
+    head = prev
+  }
 }
 
 // 1
