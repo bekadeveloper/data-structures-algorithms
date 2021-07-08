@@ -19,6 +19,7 @@ if let middleNode = getMiddle(list1) {
 
 
 // 2 (runner's technique)
+// Time: O(n)
 func findMiddle<T>(_ list: LinkedList<T>) -> Node<T>? {
     var slow = list.head
     var fast = list.head

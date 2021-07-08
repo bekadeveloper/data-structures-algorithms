@@ -28,6 +28,8 @@ extension LinkedList {
 
 
   // 2 (easy way to reverse)
+  // Time: O(n)
+  // Space: O(n)
   mutating func easyReverse() {
     var tempList = LinkedList<Value>()
 
@@ -41,6 +43,7 @@ extension LinkedList {
 
 
   // 3 (more optimal algorithm for reversing a list)
+  // Time: O(n)
   mutating func optimalReverse() {
     tail = head
     var prev = head

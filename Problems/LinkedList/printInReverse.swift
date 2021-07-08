@@ -26,6 +26,8 @@ printInReverse(list)
 
 
 // 2 (recursion)
+// Time: O(n)
+// Space: O(n)
 func printInReverse<T>(_ node: Node<T>?) {
     guard let node = node else { return }
     printInReverse(node.next)
