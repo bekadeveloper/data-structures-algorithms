@@ -11,6 +11,7 @@ import Foundation
  * }
  */
  
+// Time: O(max(n, m)), where n is the number of nodes in first list, and m is the number of nodes in second list
 class Solution {
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         var node1 = l1
