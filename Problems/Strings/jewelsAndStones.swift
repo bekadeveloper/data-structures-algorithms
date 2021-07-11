@@ -14,4 +14,9 @@ class Solution {
         
         return number
     }
+
+    // One-liner
+    func numJewelsInStones2(_ jewels: String, _ stones: String) -> Int {
+        stones.filter { jewels.contains($0) }.count
+    }
 }
