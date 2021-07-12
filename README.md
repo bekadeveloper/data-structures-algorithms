@@ -1,30 +1,29 @@
 # Data Structures &amp; Algorithms in Swift
-with HackerRank and LeetCode problems
+with LeetCode problems
 
 **Note: Up to date for Xcode 12 &amp; Swift 5.3 and newer**
 
 <br/>
 
-
 ### [Stack](Stack/Stack/Stack.swift) (aka LIFO)
-|                     | `push`         | `pop`           | `peek`
-| ------------------- | :-----------:  | :-----------:   | :-----------:
-| **Behaviour**       | add to the end | remove the last | look at the last
-| **Time Complexity** | O(1)           | O(1)            | O(1)
+|                     |     `push`     |      `pop`      |      `peek`      |
+| ------------------- | :------------: | :-------------: | :--------------: |
+| **Behaviour**       | add to the end | remove the last | look at the last |
+| **Time Complexity** |      O(1)      |      O(1)       |       O(1)       |
 
 
 ### [LinkedList](LinkedList/LinkedList/LinkedList.swift)
 Adding values:
-|                     | `push`         | `append`        | `insert(after:)`    | `node(at:)`
-| ------------------- | :-----------:  | :-----------:   | :-----------:       | :-----------:
-| **Behaviour**       | insert at head | insert at tail  | insert after a node | returns a node at given index
-| **Time Complexity** | O(1)           | O(1)            | O(1)                | O(i), where i is the given index
+|                     |     `push`     |    `append`    |  `insert(after:)`   |           `node(at:)`            |
+| ------------------- | :------------: | :------------: | :-----------------: | :------------------------------: |
+| **Behaviour**       | insert at head | insert at tail | insert after a node |  returns a node at given index   |
+| **Time Complexity** |      O(1)      |      O(1)      |        O(1)         | O(i), where i is the given index |
 
 Removing values:
-|                     | `pop`          | `removeLast`    | `remove(after:)`
-| ------------------- | :-----------:  | :-----------:   | :-----------:
-| **Behaviour**       | remove at head | remove at tail  | remove the immediate next node
-| **Time Complexity** | O(1)           | O(n)            | O(1)
+|                     |     `pop`      |  `removeLast`  |        `remove(after:)`        |
+| ------------------- | :------------: | :------------: | :----------------------------: |
+| **Behaviour**       | remove at head | remove at tail | remove the immediate next node |
+| **Time Complexity** |      O(1)      |      O(n)      |              O(1)              |
 
 <br/><br/><br/>
 
