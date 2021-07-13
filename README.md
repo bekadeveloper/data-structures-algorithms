@@ -1,9 +1,13 @@
 # Data Structures &amp; Algorithms in Swift
 with LeetCode problems
 
-**Note: Up to date for Xcode 12 &amp; Swift 5.3 and newer**
+**Note: Up to date for Xcode 11 &amp; Swift 5.1 and newer**
 
-<br/>
+- [Stack](#stack-aka-lifo)
+- [Linked List](#linkedlist)
+- [Queue](#queue-aka-fifo)
+
+<br>
 
 ### [Stack](Stack/Stack/Stack.swift) (aka LIFO)
 |                     |     `push`     |      `pop`      |      `peek`      |
@@ -25,7 +29,15 @@ Removing values:
 | **Behaviour**       | remove at head | remove at tail | remove the immediate next node |
 | **Time Complexity** |      O(1)      |      O(n)      |              O(1)              |
 
-<br/><br/><br/>
+
+### [Queue](Queue/Queue/QueueProtocol.swift) (aka FIFO)
+[Array-based](Queue/Queue/QueueArray.swift) implementation:
+|                     |    `enqueue`             |  `dequeue`                     |        `peek`                       |
+| ------------------- | :------------:           |  :------------:                | :----------------------------:      |
+| **Behaviour**       | add to the back of queue | remove from the front of queue | return the first element from queue |
+| **Time Complexity** |      O(1)                |      O(n)                      |              O(1)                   |
+
+<br/><br/>
 
 Feel free to contribute! <br/>
 This repo is yours ❤️
