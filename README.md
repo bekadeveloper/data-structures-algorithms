@@ -3,10 +3,9 @@ with LeetCode problems
 
 **Note: Up to date for Xcode 11 &amp; Swift 5.1 and newer**
 
-- [Data Structures &amp; Algorithms in Swift](#data-structures--algorithms-in-swift)
-    - [Stack (aka LIFO)](#stack-aka-lifo)
-    - [Linked List](#linked-list)
-    - [Queue (aka FIFO)](#queue-aka-fifo)
+- [Stack](#stack-aka-lifo)
+- [Linked List](#linked-list)
+- [Queue](#queue-aka-fifo)    
 
 <br>
 
