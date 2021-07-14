@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9140EF7269F2DEA0097E0CE /* QueueLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9140EF6269F2DEA0097E0CE /* QueueLinkedList.swift */; };
 		E9CEF1CF269DC50F005E3786 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEF1CE269DC50F005E3786 /* main.swift */; };
 		E9CEF1D6269DC57C005E3786 /* QueueArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEF1D5269DC57C005E3786 /* QueueArray.swift */; };
 		E9CEF1D8269DC5B2005E3786 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CEF1D7269DC5B2005E3786 /* Helper.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E9140EF6269F2DEA0097E0CE /* QueueLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueLinkedList.swift; sourceTree = "<group>"; };
 		E9CEF1CB269DC50F005E3786 /* Queue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Queue; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CEF1CE269DC50F005E3786 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E9CEF1D5269DC57C005E3786 /* QueueArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueArray.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				E9CEF1CE269DC50F005E3786 /* main.swift */,
 				E9CEF1D5269DC57C005E3786 /* QueueArray.swift */,
+				E9140EF6269F2DEA0097E0CE /* QueueLinkedList.swift */,
 				E9CEF1D9269DC985005E3786 /* QueueProtocol.swift */,
 				E9CEF1D7269DC5B2005E3786 /* Helper.swift */,
 			);
@@ -131,6 +134,7 @@
 				E9CEF1CF269DC50F005E3786 /* main.swift in Sources */,
 				E9CEF1DA269DC985005E3786 /* QueueProtocol.swift in Sources */,
 				E9CEF1D6269DC57C005E3786 /* QueueArray.swift in Sources */,
+				E9140EF7269F2DEA0097E0CE /* QueueLinkedList.swift in Sources */,
 				E9CEF1D8269DC5B2005E3786 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

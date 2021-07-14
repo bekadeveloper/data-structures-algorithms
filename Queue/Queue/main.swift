@@ -22,3 +22,19 @@ example(of: "array-based queue") {
     print("Removed element: \(removedElement)")
     print("Peek: \(queue.peek!)")
 }
+
+example(of: "doubly linked-list-based queue") {
+    let queue = QueueLinkedList<String>()
+    
+    queue.enqueue("Ray")
+    queue.enqueue("Brian")
+    queue.enqueue("Eric")
+    
+    print("Before dequeue: \(queue)")
+    
+    let removedElement = queue.dequeue()!
+    
+    print("After dequeue: \(queue)")
+    print("Removed element: \(removedElement)")
+    print("Peek: \(queue.peek!)")
+}
