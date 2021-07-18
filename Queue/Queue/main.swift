@@ -38,3 +38,18 @@ example(of: "doubly linked-list-based queue") {
     print("Removed element: \(removedElement)")
     print("Peek: \(queue.peek!)")
 }
+
+example(of: "ring buffer-based queue") {
+    var queue = QueueRingBuffer<String>(count: 10)
+    
+    queue.enqueue("Ray")
+    queue.enqueue("Brian")
+    queue.enqueue("Eric")
+    print("Before dequeue: \(queue)")
+    
+    let removedElement = queue.dequeue()!
+    print("After dequeue: \(queue)")
+    
+    print("Removed element: \(removedElement)")
+    print("Peek: \(queue.peek!)")
+}
