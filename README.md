@@ -47,6 +47,13 @@ Removing values:
 | **`dequeue`**       | O(1)           | O(1)           |
 | **Space Complexity**| O(n)           | O(n)           |
 
+[Ring Buffer-based](Queue/Queue/QueueRingBuffer.swift) implementation:
+|                     | Average case   | Worst case     |
+| ------------------- | :------------: | :------------: |
+| **`enqueue`**       | O(1)           | O(1)           |
+| **`dequeue`**       | O(1)           | O(1)           |
+| **Space Complexity**| O(n)           | O(n)           |
+
 <br><br>
 
 Feel free to contribute! <br>
