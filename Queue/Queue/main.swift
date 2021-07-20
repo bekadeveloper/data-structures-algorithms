@@ -53,3 +53,18 @@ example(of: "ring buffer-based queue") {
     print("Removed element: \(removedElement)")
     print("Peek: \(queue.peek!)")
 }
+
+example(of: "double stack-based queue") {
+    var queue = QueueStack<String>()
+    
+    queue.enqueue("Ray")
+    queue.enqueue("Brian")
+    queue.enqueue("Eric")
+    print("Before dequeue: \(queue)")
+    
+    let element = queue.dequeue()!
+    
+    print("After dequeue: \(queue)")
+    print("Removed element: \(element)")
+    print("Peek: \(queue.peek!)")
+}
