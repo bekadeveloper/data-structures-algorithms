@@ -7,7 +7,6 @@ with LeetCode problems
 - [Linked List](#linked-list)
 - [Queue](#queue-aka-fifo)    
 
-<br>
 
 ### [Stack](Stack/Stack/Stack.swift) (aka LIFO)
 |                     |     `push`     |      `pop`      |      `peek`      |
@@ -15,7 +14,6 @@ with LeetCode problems
 | **Behaviour**       | add to the end | remove the last | look at the last |
 | **Time Complexity** |      O(1)      |      O(1)       |       O(1)       |
 
-<br>
 
 ### [Linked List](LinkedList/LinkedList/LinkedList.swift)
 Adding values:
@@ -30,7 +28,6 @@ Removing values:
 | **Behaviour**       | remove at head | remove at tail  | remove the immediate next node |
 | **Time Complexity** |      O(1)      |      O(n)       |              O(1)              |
 
-<br>
 
 ### [Queue](Queue/Queue/QueueProtocol.swift) (aka FIFO)
 [Array-based](Queue/Queue/QueueArray.swift) implementation:
@@ -52,6 +49,13 @@ Removing values:
 | ------------------- | :------------: | :------------: |
 | **`enqueue`**       | O(1)           | O(1)           |
 | **`dequeue`**       | O(1)           | O(1)           |
+| **Space Complexity**| O(n)           | O(n)           |
+
+[Double Stack-based](Queue/Queue/QueueStack.swift) implementation:
+|                     | Average case   | Worst case     |
+| ------------------- | :------------: | :------------: |
+| **`enqueue`**       | O(1)           | O(n)           |
+| **`dequeue`**       | O(1)           | O(n)           |
 | **Space Complexity**| O(n)           | O(n)           |
 
 <br><br>
