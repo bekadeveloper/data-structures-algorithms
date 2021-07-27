@@ -58,7 +58,14 @@ Removing values:
 | **`dequeue`**       | O(1)           | O(n)           |
 | **Space Complexity**| O(n)           | O(n)           |
 
-<br><br>
+<br>
+
+**Useful links:**
+- [LeetCode spreadsheet](https://docs.google.com/spreadsheets/d/1je6J87BX5C5fo5Gbok1TJncVK3-UFkiDznHUzhtHbVU/edit?usp=sharing) sorted by score.
+- [Data Structures and Algorithms](https://www.raywenderlich.com/books/data-structures-algorithms-in-swift) book by raywenderlich team.
+- [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club) repository.
+
+<br>
 
 Feel free to contribute! <br>
 This repo is yours ❤️
