@@ -5,7 +5,8 @@ with LeetCode problems
 
 - [Stack](#stack-aka-lifo)
 - [Linked List](#linked-list)
-- [Queue](#queue-aka-fifo)    
+- [Queue](#queue-aka-fifo)
+- [Deque](#double-ended-queue-aka-deque)    
 
 
 ### [Stack](Stack/Stack/Stack.swift) (aka LIFO)
@@ -57,6 +58,14 @@ Removing values:
 | **`enqueue`**       | O(1)           | O(n)           |
 | **`dequeue`**       | O(1)           | O(n)           |
 | **Space Complexity**| O(n)           | O(n)           |
+
+
+### [Double-ended Queue](Deque/Deque/Deque.swift) (aka Deque)
+[Doubly linked-list based](Deque/Deque/Deque.swift) implementation:
+|                     |  `enqueue(to:)`                     |  `dequeue(from:)`                        |
+| ------------------- | :---------------------------------: | :--------------------------------------: |
+| **Behaviour**       | add to the front or back of a deque | remove from the front or back of a deque |
+| **Time Complexity** | O(1)                                | O(1)                                     |
 
 <br>
 
