@@ -62,10 +62,10 @@ Removing values:
 
 ### [Double-ended Queue](Deque/Deque/Deque.swift) (aka Deque)
 [Doubly linked-list based](Deque/Deque/Deque.swift) implementation:
-|                     |  `enqueue(to:)`                     |  `dequeue(from:)`                        |
-| ------------------- | :---------------------------------: | :--------------------------------------: |
-| **Behaviour**       | add to the front or back of a deque | remove from the front or back of a deque |
-| **Time Complexity** | O(1)                                | O(1)                                     |
+|                     |  `enqueue(to:)`          |  `dequeue(from:)`             |
+| ------------------- | :----------------------: | :---------------------------: |
+| **Behaviour**       | add to the front or back | remove from the front or back |
+| **Time Complexity** | O(1)                     | O(1)                          |
 
 <br>
 
