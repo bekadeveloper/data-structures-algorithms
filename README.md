@@ -6,10 +6,10 @@ with [Leetcode](Leetcode) problems
 <br>
 
 **Basic data structures:**
-- [Stack](Stack/stack.md)
-- [Linked List](LinkedList/linkedlist.md)
-- [Queue](Queue/queue.md)
-- [Deque](Deque/deque.md)   
+- [Stack](Stack)
+- [Linked List](LinkedList)
+- [Queue](Queue)
+- [Deque](Deque)   
 
 **Trees:**
 - coming soon...
